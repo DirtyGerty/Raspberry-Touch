@@ -19,6 +19,11 @@ that is driven via a 2n7000 transistor .(Jaycar and Altronics in Aus have all th
 This sketch will send ir codes to the ir transmitter LED, and also decode the incoming ir from your remote
 The method I used  to communicate between node red and irserver is MQTT messages , If you choose this method you will need a mqtt broker (you could install this on the same pi )and point the ir server and node red to the mqtt broker by changing the sketch to suit 
 
+My Audio System (ROTEL 1500 series) have the capability of control via direct ethernet connection , This is achieved by using RS232 commands via
+telnet and reading the responses , this enables source infomation and volume level.
+
+The Audio control page changes the button functions based on the source provided from the Rotel
+
 My power switch are rf power points 
 I use this https://www.jaycar.com.au/iot-wireless-switch as a basis and converted it to run on MQTT messages
 
